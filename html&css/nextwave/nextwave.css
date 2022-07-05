@@ -1,0 +1,45 @@
+.bg-container{
+    background-color: blanchedalmond;
+    height: 100vh;
+    text-align: center;
+}
+
+.bg-ccbp-acadamy{
+    background-color: whitesmoke;
+    height: 100vh;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: blue;
+    border-style: double;
+}
+.image-ccbp{
+    height: 30vh;
+}
+.backgroundgraduate{
+background-color: greenyellow;
+padding: 5px;
+border-radius: 10px;
+margin-right: 25px;
+font-size: medium;
+}
+.backgroundfinalyear{
+    background-color: wheat;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 25px;
+    font-size: medium;
+    }
+    .background12th{
+        background: greenyellow;
+        padding: 5px;
+        border-radius: 10px;
+        margin-right: 25px;
+        font-size: medium;
+        }
+        .anybranch{
+            background: bisque;
+            padding: 5px;
+            border-radius: 10px;
+            margin-right: 25px;
+            font-size: medium;
+            }

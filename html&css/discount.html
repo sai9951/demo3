@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Shoping bill</h1>
+    <h2>
+    amount =
+    <input type="text" id="shopingamount">
+    <button onclick="calculation()" >calculate</button>
+    </h2>
+    <h3 id="netpayamount"></h3>
+    <h4 id="discountamount"></h4>
+    <script>
+        
+        function calculation(){
+            shopingbill=document.getElementById("shopingamount").value
+            if (shopingbill<=10000){
+                dis=10
+            }else if (shopingbill>10000<=20000){
+                dis=20
+            }else if (shopingbill>20000<=30000){
+                dis=30
+            }else if (shopingbill>40000){
+                dis=40
+            }
+            discount=(shopingbill*dis/100)
+            netpay=shopingbill-(shopingbill*dis/100)
+            document.getElementById("netpayamount").innerHTML="netpay="+netpay
+            document.getElementById("discountamount").innerHTML="discountamount="+discount
+        }
+    </script>
+</body>
+</html>

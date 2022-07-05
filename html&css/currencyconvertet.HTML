@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency conventor</title>
+</head>
+<body>
+    <h>Currency conventor</h>
+    From currency:
+    <select id="Fromcurrency">
+        <option value="USD">USD</option>
+        <option value="eruo">ERUO</option>
+        <option value="pond">POND</option>
+    </select>
+    To currency:
+    <select id="tocurrency">
+        <option value="INR">INR</option>
+    </select>
+    Amount:
+    <input type="text" id="amount">
+    <button onclick="convertvalue()">convert </button>
+    <h2 id="result"></h2>
+    <script>
+        function convertvalue(){
+            from=document.getElementById("Fromcurrency").value
+            amount=document.getElementById("amount").value
+            rate=0 
+            if (from=="USD"){
+                rate=78
+            }else if (from=="eruo"){
+                rate=80
+            }else if (from=="pond"){
+                rate=90
+            }else {
+                rate=0
+            }
+            convertableamount=rate*amount
+            document.getElementById("result").innerHTML=convertableamount
+
+        }
+
+    </script>
+</body>
+</html>

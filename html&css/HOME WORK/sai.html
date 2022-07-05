@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sai.css">
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="data:image/png;base64,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" class="image"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item active">
+                <a class="nav-link" href="#AboutUs" >About us  <span class="sr-only">(current)</span></a>
+              </li>
+            
+              <li class="nav-item active">
+                <a class="nav-link" href="#Allcourses">All courses <span class="sr-only">(current)</span></a>
+              </li>
+            
+              <li class="nav-item active">
+                <a class="nav-link" href="#Gallery">Gallery <span class="sr-only">(current)</span></a>
+              </li>
+            
+              <li class="nav-item active">
+                <a class="nav-link" href="#wedniar">Webinar <span class="sr-only">(current)</span></a>
+              </li>
+            
+              <li class="nav-item active">
+                <a class="nav-link" href="#contact">Contact <span class="sr-only">(current)</span></a>
+              </li>
+            
+            
+              <li class="nav-item active">
+                <a class="nav-link" href="#Login">Login <span class="sr-only">(current)</span></a>
+              </li>
+
+
+          </ul>
+          
+        </div>
+      </nav>
+    
+        <div class="bg-container" id="Home">
+            <h1>Designed to transform you into a highly skilled Software Professional</h1>
+    
+            <h2 class="mt-5">Recognized as the Greatest Brand in Education</h2>
+            <img src="https://assets-global.website-files.com/615dca66d4ca6ac30a6860f9/61c165ca0870e98c450b7d87_award-design-line-desktop-2x.png"/>
+        </div>
+
+        <div id="AboutUs" class="container" height="100vh" background="cover"><br>
+            <h3 style="text-align:center; background-color:orange">AboutUs</h3>
+            <img src="" class="mx-auto d-block">
+            <h3 style="text-align:center ;"><strong>
+              Raghu Prasad Konandur(CEO)
+                  </strong></h3>
+            <p>Kaushalya is founded by Raghu Prasad Konandur an IT Professional,academician and corporate trainer. He has 20 + years of experience in IT.</p><br>
+            <p>He started of his career as a Lecturer in an Engineering college and then switched to IT. He has worked with multiple top notch companies.He has started Kaushalya with the intension of bridging the gap between the expectation of the industry and the skills of the students/professionals.
+          </p>
+          <h3 style="background-color:orange; text-align:center">Skill Development is need of the hour</h3>
+          <p>World is changing fast.Technology is great enabler.Early adoption of emerging technology is essential to survive in the IT industry.Hope you agree that only faster,higher and stronger can survive.</p><br>
+          <p>Kaushalya is founded by Raghu Prasad Konandur an IT Professional,academician and corporate trainer. Raghu and his team of IT professionals will facilitate you in your journey to Skill,Up-skill and Re-Skill.
+           <h3 style="text-decoration:underline;">Service Offerings</h3>
+           <p>
+             Its imperative to skill,up-skill and re-skill.You are not alone in your journey.We are with you to provide valuable coaching in the form of</p>
+             <p><pre>
+              1.Online/In person Training
+              2.Corporate Training
+              3.Training for accademic institutuions
+              4.Internships
+              5.Software Development
+              6.Consultancy-Consultant to vendors of Atal Tinkering Lab and ECIL-ECIT 
+                franchise
+             </pre></p>
+      
+          </div>
+
+        <div class="d-flex flex-colum" id="Gallery">
+            <div class="bg-ccbp-acadamy col-sm-6">
+                <div>
+                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/Academy-blue-logo.svg">
+                    <img src="https://res.cloudinary.com/nxtwave-disruptive-technologies-private-limited/image/upload/dpr_auto,w_auto,f_auto,q_80/v1/ccbp-website/Home/Landingpage/academy-peron-photo.png" class="image-ccbp"/>
+                </div>
+                
+                    <h1 class="background12th">POST 12TH / INTERMEDIATE</h1>
+                    <h1 class="backgroundfinalyear">1ST, 2ND, 3RD YEAR</h1>
+                    <div>
+                        <h1>Learn like top IITians
+                            and achieve high-paid software jobs</h1>
+                    </div>
+                </div>
+
+            <div class="bg-ccbp-acadamy col-sm-6 ">
+                <div>
+                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/Academy-blue-logo.svg">
+                    <img src="https://res.cloudinary.com/nxtwave-disruptive-technologies-private-limited/image/upload/dpr_auto,w_auto,f_auto,q_80/v1/ccbp-website/Home/Landingpage/intensive-person-photo.png" class="image-ccbp"/>
+                </div>
+                
+                <div class="d-flex flex-colum" >
+                    <h1 class="backgroundgraduate">GRADUATES</h1>
+                    <h1 class="backgroundfinalyear">FINAL YEAR</h1>
+                </div>
+                <h1 class="anybranch">ANY BRANCH OR DEGREE</h1>
+                <div>
+                    <h1>A proven curriculum
+                        to get a software job
+                        of ₹4.5 - ₹9 LPA*</h1>
+                </div>
+            </div>
+        </div>
+        <div id="Allcourses" class="course">
+        <div class="favourite-place-card-container d-flex flex-row " >
+            <div>
+           <h1 class="favourite-place-card-heading"> Front end developer</h1>
+           <p class="favourite-place-card-description"> In this u can learn only on front side interface </p>
+             </div>
+             
+        </div>  
+        <div class="favourite-place-card-container d-flex flex-row " >
+            <div>
+           <h1 class="favourite-place-card-heading"> Back end  developer</h1>
+           <p class="favourite-place-card-description"> In this u can learn only on back  side of the sever </p>
+             </div>
+             
+        </div>
+        <div class="favourite-place-card-container d-flex flex-row " >
+            <div>
+           <h1 class="favourite-place-card-heading"> Full stack developer</h1>
+           <p class="favourite-place-card-description"> here u can learn both interface & server side </p>
+             </div>
+             
+            </div>
+        </div>
+
+        <div class="" id="wedniar">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dZBX54MA7O0?rel=0" allowfullscreen></iframe>
+              </div>
+        </div>
+
+
+        <div id="contact" class="container ">
+            <h3 style="background-color:orange ; text-align:center">Our Centers</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15545.674008580892!2d77.6208903!3d13.0726422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd32417d753864255!2sKaushalya%20Technical%20Training%20and%20Consutancy!5e0!3m2!1sen!2sin!4v1656332266294!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>23rd Cross Rd, M.C.E.C.H.S. Layout 1st Phase, Sampigehalli, Bengaluru, Karnataka 560077</p>
+       
+        </div>
+
+        <div id="Login" class="container "><br>
+            <h3 style="background-color:orange ; text-align:center">Home</h3><br>
+            <label for="email">Email :</label><br>
+            <input type="email" name="email" id="email" required ><br>
+            <label for="mobile">Mobile :</label><br>
+            <input type="number" name="mobile" id="mobile" required><br>
+            <br>
+            <label for="password">Password :</label><br>
+            <input type="password" name="password" id="password" required><br>
+           <input type="submit" value="Login">
+          </div>
+
+
+
+
+</body>
+</html>
